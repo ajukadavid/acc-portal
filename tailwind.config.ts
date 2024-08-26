@@ -16,6 +16,7 @@ const config: Config = {
     },
     colors: {
       "btn-color": '#ed3336',
+      "splash-color": "#004777"
     }
   },
   plugins: [],
