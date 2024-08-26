@@ -34,7 +34,7 @@ export default function Home() {
         </div>
       <div className="flex ">
       <button className="border  border-btn-color bg-btn-color px-16 py-5 text-2xl">
-        <span>Make Reservations</span>
+        <span className="text-white">Make Reservations</span>
       </button>
 
       </div>
