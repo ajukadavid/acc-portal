@@ -1,7 +1,7 @@
 import { Kumar_One, Inter } from "next/font/google";
 import Link from 'next/link'
-
-
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 const kumar = Kumar_One({
     weight: '400',
     subsets: ['latin']
@@ -35,8 +35,13 @@ export default function signUp() {
 
           </button>
             </div>
-            <div className="w-2/3 bg-red-800 flex flex-col h-screen">
-                
+            <div className="w-2/3  pl-5 pr-10 items-center flex flex-col h-screen">
+                    <span className={`${kumar.className} text-black mb-5 text-4xl mt-5`}>Create Account</span>
+                <div className="w-full">
+                <Label htmlFor="userid">User id</Label>
+
+                <Input id="userid" className="bg-red-500"/>
+                </div>
             </div>
         </main>
     )
