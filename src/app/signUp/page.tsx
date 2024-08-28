@@ -2,6 +2,8 @@ import { Kumar_One, Inter } from "next/font/google";
 import Link from 'next/link'
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+
 const kumar = Kumar_One({
     weight: '400',
     subsets: ['latin']
@@ -53,6 +55,34 @@ export default function signUp() {
 
                         <Input id="lastname" placeholder="Last name" className="bg-input-bg mt-2 border border-btn-color rounded-sm focus-visible:ring-0" />
                     </div>
+
+                    <Label>Gender</Label>
+
+                    <RadioGroup defaultValue="option-one" className="flex">
+
+                        <div className="flex items-center space-x-2">
+                            <RadioGroupItem className="w-5 h-5 text-btn-color bg-gray-100 border-gray-300 focus:ring-btn-color dark:focus:ring-btn-color dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" value="option-one" id="option-one" />
+                            <Label htmlFor="option-one">Male</Label>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                            <RadioGroupItem className="w-5 h-5 text-btn-color bg-gray-100 border-gray-300 focus:ring-btn-color dark:focus:ring-btn-color dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" value="option-two" id="option-two" />
+                            <Label htmlFor="option-two">Female</Label>
+                        </div>
+                    </RadioGroup>
+
+                    <div className="w-full flex space-x-4">
+                        <div className="w-1/4">
+                            <Label className="font-bold text-base mb-3" htmlFor="lastname">Last name</Label>
+
+                            <Input id="lastname" placeholder="Last name" className="bg-input-bg mt-2 border border-btn-color rounded-sm focus-visible:ring-0" />
+                        </div>
+                        <div className="w-3/4">
+                            <Label className="font-bold text-base mb-3" htmlFor="lastname">Last name</Label>
+
+                            <Input id="lastname" placeholder="Last name" className="bg-input-bg mt-2 border border-btn-color rounded-sm focus-visible:ring-0" />
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
