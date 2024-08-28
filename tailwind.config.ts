@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss"
+import colors from "tailwindcss/colors";
 
 const config = {
   darkMode: ["class"],
@@ -19,6 +20,10 @@ const config = {
     },
     extend: {
       colors: {
+        ...colors,
+        'btn-color': "#FF0008",
+        'input-disabled': "#FFCDCD",
+        'input-bg': "#FFF4F4",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
