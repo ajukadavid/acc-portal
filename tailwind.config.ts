@@ -21,7 +21,7 @@ const config = {
     extend: {
       colors: {
         ...colors,
-        'btn-color': "#FF0008",
+        'btn-color': "#CC0000",
         'input-disabled': "#FFCDCD",
         'input-bg': "#FFF4F4",
         "splash-color": "#004777",

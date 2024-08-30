@@ -80,7 +80,7 @@ export default function signUp() {
                             </Link>
                         </button>
                     </div>
-                    <div className="w-2/3 px-40 overflow-auto items-center flex flex-col">
+                    <div className="w-2/3 px-40 pb-10 overflow-auto items-center flex flex-col">
                         <span className="text-black mb-5 text-4xl mt-20">Create Account</span>
     
                         <div className="flex flex-col w-full space-y-6">
@@ -135,11 +135,11 @@ export default function signUp() {
                                 <Input id="email" placeholder="Email address" className="bg-input-bg mt-2 border border-btn-color rounded-sm focus-visible:ring-0" />
                             </div>
                             <div className="w-full">
-                                <Label className="font-bold text-base mb-3" htmlFor="password">Password</Label>
+                                <Label className="font-bold text-base mb-3" htmlFor="password">Password <sup>*</sup></Label>
                                 <Input id="password" type="password" placeholder="Password" className="bg-input-bg mt-2 border border-btn-color rounded-sm focus-visible:ring-0" />
                             </div>
                             <div className="w-full">
-                                <Label className="font-bold text-base mb-3" htmlFor="confirmpass">Confirm Password</Label>
+                                <Label className="font-bold text-base mb-3" htmlFor="confirmpass">Confirm Password <sup>*</sup></Label>
                                 <Input id="confirmpass" placeholder="Confirm Password" className="bg-input-bg mt-2 border border-btn-color rounded-sm focus-visible:ring-0" />
                             </div>
                             <div className="w-full">
@@ -147,6 +147,11 @@ export default function signUp() {
                                 <Textarea id="remarks" className="bg-input-bg mt-2 border border-btn-color rounded-sm focus-visible:ring-0" />
                             </div>
                         </div>
+                        <button className="text-white bg-btn-color py-3 mt-7 text-xl border w-full rounded-lg border-none shadow-md">
+                            <Link href="">
+                                Login
+                            </Link>
+                        </button>
                     </div>
                 </div>
             )}
