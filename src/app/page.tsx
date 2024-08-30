@@ -28,9 +28,13 @@ export default function Home() {
       <nav className="flex py-3 px-5 sticky top-0 bg-white justify-between items-center">
         <img src="/logo.png" />
         <div className="flex space-x-4">
-          <button className="border-gray-400 border px-7 py-1 shadow-md rounded-lg text-gray-400">Log in</button>
+          <button className="border-gray-400 border px-7 py-1 shadow-md rounded-lg text-gray-400"> 
+            <Link href="/logIn">
+             Log in
+          </Link>
+          </button>
         
-         <button className="bg-btn-color border px-7 rounded-lg border-none shadow-md">
+         <button className="bg-btn-color border px-7 rounded-lg border-none shadow-md text-white">
          <Link href="/signUp">
           Sign Up
           </Link>
