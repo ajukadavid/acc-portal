@@ -14,6 +14,8 @@ import {
     SelectValue,
 } from "@/components/ui/select"
 
+import { Textarea } from "@/components/ui/textarea";
+
 interface DialCode {
     dial_code: string;
     name: string;
@@ -54,11 +56,11 @@ export default function signUp() {
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
-        height: '100vh',
+
 
     };
     return (
-        <main className="w-full flex">
+        <main className="w-full">
             {/* Loading State */}
             {isLoading ? (
                 <div className="w-full flex justify-center items-center">
@@ -66,8 +68,8 @@ export default function signUp() {
                 </div>
             ) : (
                 // Main content after loading is complete
-                <div className="w-full flex">
-                    <div style={backgroundStyle} className="w-1/3 flex items-center justify-center flex-col">
+                <div className="w-full h-screen items-stretch flex">
+                    <div style={backgroundStyle} className="w-1/3 bg-red-600 flex items-center justify-center flex-col">
                         <img className="w-22 h-22" src="/images/logoyt.png" />
                         <span className="text-white text-4xl mt-5">Welcome Back! </span>
                         <span className="text-white text-2xl">Already have an account? </span>
@@ -78,7 +80,7 @@ export default function signUp() {
                             </Link>
                         </button>
                     </div>
-                    <div className="w-2/3 px-40 items-center flex flex-col h-screen">
+                    <div className="w-2/3 px-40 overflow-auto items-center flex flex-col">
                         <span className="text-black mb-5 text-4xl mt-20">Create Account</span>
     
                         <div className="flex flex-col w-full space-y-6">
@@ -126,6 +128,23 @@ export default function signUp() {
                                         <Input id="phone" placeholder="Phone number" className="bg-input-bg border border-btn-color rounded-sm focus-visible:ring-0" />
                                     </div>
                                 </div>
+                            </div>
+
+                            <div className="w-full">
+                                <Label className="font-bold text-base mb-3" htmlFor="email">Email address</Label>
+                                <Input id="email" placeholder="Email address" className="bg-input-bg mt-2 border border-btn-color rounded-sm focus-visible:ring-0" />
+                            </div>
+                            <div className="w-full">
+                                <Label className="font-bold text-base mb-3" htmlFor="password">Password</Label>
+                                <Input id="password" type="password" placeholder="Password" className="bg-input-bg mt-2 border border-btn-color rounded-sm focus-visible:ring-0" />
+                            </div>
+                            <div className="w-full">
+                                <Label className="font-bold text-base mb-3" htmlFor="confirmpass">Confirm Password</Label>
+                                <Input id="confirmpass" placeholder="Confirm Password" className="bg-input-bg mt-2 border border-btn-color rounded-sm focus-visible:ring-0" />
+                            </div>
+                            <div className="w-full">
+                                <Label className="font-bold text-base mb-3" htmlFor="remarks">Remarks</Label>
+                                <Textarea id="remarks" className="bg-input-bg mt-2 border border-btn-color rounded-sm focus-visible:ring-0" />
                             </div>
                         </div>
                     </div>

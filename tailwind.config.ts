@@ -24,6 +24,7 @@ const config = {
         'btn-color': "#FF0008",
         'input-disabled': "#FFCDCD",
         'input-bg': "#FFF4F4",
+        "splash-color": "#004777",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
