@@ -49,9 +49,13 @@ export default function Home() {
           <p className="self-center">Portal</p>
         </div>
         <div>
-          <button className="border shadow-md mt-8 rounded-lg flex items-center space-x-6 text-white border-btn-color bg-btn-color px-8 py-5 text-2xl">
-            <span>Make Reservations</span>
+          <button className="border shadow-md mt-8 rounded-lg  text-white border-btn-color bg-btn-color px-8 py-5 text-2xl">
+          
+          <Link className="flex items-center  space-x-6" href="/reservations">
+          <span>Make Reservations</span>
             <FaArrowRight />
+          </Link>
+           
           </button>
         </div>
         <div className="absolute bottom-0">
