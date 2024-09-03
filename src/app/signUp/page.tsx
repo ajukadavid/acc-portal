@@ -61,7 +61,6 @@ export default function signUp() {
     };
     return (
         <main className="w-full">
-            {/* Loading State */}
             {isLoading ? (
                 <div className="w-full flex justify-center items-center">
                     <span>Loading...</span>

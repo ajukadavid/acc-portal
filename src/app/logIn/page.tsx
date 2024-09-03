@@ -31,7 +31,6 @@ const inter = Inter({
     weight: '400',
     subsets: ['latin']
 })
-
 export default function signUp() {
 
 
