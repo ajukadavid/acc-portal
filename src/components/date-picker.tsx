@@ -21,12 +21,12 @@ import { Popover, PopoverTrigger, PopoverContent } from "@/components/ui/popover
 import { Button } from "@/components/ui/button"
 import { Calendar } from "@/components/ui/calendar"
 
-export function datePicker() {
+export function DatePicker() {
   return (
     <Popover>
       <PopoverTrigger asChild>
-        <Button variant="outline" className="w-[240px] justify-between text-left font-normal">
-          <span>Pick a date</span>
+        <Button variant="outline" className="w-full justify-between text-left font-normal hover:bg-input-bg bg-input-bg border-btn-color  rounded-sm focus-visible:ring-0">
+          <span>Select</span>
           <CalendarDaysIcon className="ml-1 h-4 w-4" />
         </Button>
       </PopoverTrigger>
@@ -37,7 +37,7 @@ export function datePicker() {
   )
 }
 
-function CalendarDaysIcon(props) {
+function CalendarDaysIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}

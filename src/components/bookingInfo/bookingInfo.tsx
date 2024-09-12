@@ -1,6 +1,7 @@
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useEffect, useState } from 'react';
+import { DatePicker } from "../date-picker";
 import {
     Select,
     SelectContent,
@@ -121,11 +122,19 @@ export default function BookingInfo() {
                                
                             </div>
                         </div>
+                        <div>
+                            <Label htmlFor="check-in" className="font-bold text-base mb-3">Check-in Date</Label>
+                            <div className="w-full mt-2">
+                                <DatePicker />
+                            </div>
+                        </div>
+                        <div>
+                            <Label htmlFor="check-out" className="font-bold text-base mb-3">Check-out Date</Label>
+                            <div className="w-full mt-2">
+                                <DatePicker />
+                            </div>
+                        </div>
                     </div>
-
-
-
-
                 </div>
             )}
         </main>
